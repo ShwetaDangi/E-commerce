@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-fullstack",
+  "version": "1.0.0",
+  "description": "Ecommerce website",
+  "homepage": "https://github.com/ShwetaDangi/E-commerce#readme",
+  "bugs": {
+    "url": "https://github.com/ShwetaDangi/E-commerce/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShwetaDangi/E-commerce.git"
+  },
+  "license": "ISC",
+  "author": "Shweta Dangi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
