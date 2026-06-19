@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 // import Shop from './pages/Shop';
-// import ProductDetail from './pages/ProductDetail';
+import ProductDetail from './pages/ProductDetail';
 // import Cart from './pages/Cart';
 // import Checkout from './pages/Checkout';
 // import Login from './pages/Login';
@@ -13,6 +13,8 @@ import About from './pages/About';
 // import OrderSuccess from './pages/OrderSuccess';
 import ReturnPolicy from './pages/ReturnPolicy';
 import Disclaimer from './pages/Disclaimer';
+import Register from './pages/Register';
+import Login from './pages/Login';
 // import AdminDashboard from './admin/AdminDashboard';
 // import AddProduct from './admin/AddProduct';
 // import AdminProducts from './admin/AdminProducts';
@@ -29,6 +31,9 @@ function App() {
         <Route path='/about' element={<About />}/>
         <Route path='/return' element={<ReturnPolicy />}/>
         <Route path='/disclaimer' element={<Disclaimer />}/>        
+        <Route path='/login' element={<Login />}/>        
+        <Route path='/register' element={<Register />}/>        
+        <Route path='/product/:id' element={<ProductDetail />}/>        
       </Routes>
       <Footer />
     </Router>
